@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Questrial;
 }
 
 header {
@@ -17,8 +18,21 @@ header i {
 
 h1 {
     color: white;
-    font-family: Questrial;
     margin-bottom: 0.75em;
+}
+#section1 p{
+    margin: 0.75em;
+}
+
+#section1, #section2 {
+    border-bottom: 1px solid silver;
+    margin: auto;
+    width: 90%;
+}
+
+#section3 {
+    margin: auto;
+    width: 90%;
 }
 
 section {
@@ -34,7 +48,12 @@ img {
 }
 
 article {
-    width: 90%;
+    width: 100%;
+    margin: 0.75em auto;
+}
+
+main p {
+    margin: 0.5em 0;
 }
 
 ul li {
@@ -48,6 +67,14 @@ ul li {
     border-radius: 5px;
 }
 
+button {
+    background-color: #64ABD1;
+    border: none;
+    color: white;
+    padding: 0.75em 1em;
+
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -56,8 +83,10 @@ footer {
 }
 
 footer article {
-    margin: 0.75em auto;;
+    width: 90%;
+    margin: 0.75em auto;
 }
+
 footer i {
     color: #5B6063;
 }
