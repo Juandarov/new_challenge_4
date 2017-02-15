@@ -5,20 +5,26 @@
         <link rel="stylesheet" href="./css/font-awesome.min.css">
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
     </head>
     <body>
         <header>
-            <i class="fa fa-cog" aria-hidden="true"></i>
-            <h1>Undeviating</h1>
+            <div id="logo">
+                <a id="toggle" href="#menu"><i class="fa fa-bars" aria-hidden="true"></i></a>
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                <h1>Undeviating</h1>
+                <a id="signup" href=""><i class="fa fa-sign-in" aria-hidden="true"></i></a>
+            </div>
 
-            <nav>
-                <ul>
+            <nav >
+                <ul id="menu" class="navOpen">
                     <li class="selected"><a  class="select" href="#">homepage</a></li>
                     <li><a href="#">our clients</a></li>
                     <li><a href="#">about us</a></li>
                     <li><a href="#">careers</a></li>
                     <li><a href="#">contact us</a></li>
+                    <a id="return" href="#toggle"><i class="fa fa-arrow-circle-up fa-2x" aria-hidden="true"></i></a>
                 </ul>
             </nav>
 

@@ -13,9 +13,32 @@ header {
     color: white;
 }
 
+#logo {
+    display: flex;
+    align-items: baseline;
+}
+
+#toggle, #signup {
+    width: 10%;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0.25em;
+}
+
+.navOpen {
+    display: none;
+    background-color: #092146;
+    padding: 0.5em 0;
+}
+
+.navOpen:target {
+    display: block;
+}
+
+
+
 header i.fa-cog {
-    font-size: 3em;
-    margin: 0.15em auto;
+    display: none;
 }
 
 header a {
@@ -25,8 +48,10 @@ header a {
 }
 
 h1 {
+    width: 80%;
     color: white;
-    margin-bottom: 0.25em;
+    /*margin-bottom: 0.25em;
+    margin-top: 0.5em;*/
 }
 
 #section1 p{
@@ -62,7 +87,7 @@ h2 {
 }
 
 article {
-    width: 100%;
+    width: 95%;
     margin: 0.75em auto;
 }
 
@@ -76,7 +101,8 @@ ul li {
     list-style: none;
     padding: 0;
     color: white;
-    border: solid 2px white;
+    border-top: solid 2px white;
+    border-bottom: solid 2px white;
     padding: 0.25em;
     border-radius: 5px;
 }
@@ -146,21 +172,44 @@ footer p {
         box-shadow: 0px 0px 15px 0px;
     }
 
+    #logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #toggle, #signup, #return {
+        display: none;
+    }
+
+    .navOpen {
+        width: 70%;
+        margin: auto;
+        margin-top: 5em;
+        display: flex;
+        background-color: #2056ac;
+        padding: 0;
+    }
+
     h1 {
+        width: 100%;
         font-size: 56px;
     }
 
     header i.fa-cog {
+        width: 100%;
         font-size: 6em;
         margin: 0.15em auto;
         margin-top: 1em;
         color: white;
     }
 
+    header i.fa-cog {
+        display: block;
+    }
+
 
     header li {
         display: inline-block;
-
     }
 
     header ul {
