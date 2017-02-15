@@ -10,6 +10,12 @@ header {
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: white;
+}
+
+header i.fa-cog {
+    font-size: 3em;
+    margin: 0.15em auto;
 }
 
 header a {
@@ -134,16 +140,23 @@ footer p {
 @media screen and (min-width: 1200px) {
     body {
         font-size: 16px;
+        width: 1200px;
+        margin: auto;
+        border: solid 0.5px rgb(103, 103, 103);
+        box-shadow: 0px 0px 15px 0px;
     }
 
     h1 {
         font-size: 56px;
     }
 
-    header i {
-        margin-top: 1.5em;
+    header i.fa-cog {
+        font-size: 6em;
+        margin: 0.15em auto;
+        margin-top: 1em;
         color: white;
     }
+
 
     header li {
         display: inline-block;
@@ -161,7 +174,10 @@ footer p {
         padding: 0;
         color: white;
         border: none;
+        border-radius: 8px;
         padding: 0.75em;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     header ul li:hover a{
@@ -173,6 +189,14 @@ footer p {
 
     }
 
+    ul .selected {
+        background-color: white;
+    }
+
+    li .select {
+        color: #2056ac;
+    }
+
     img {
         width: 100%;
         margin: 3em auto;
@@ -180,6 +204,10 @@ footer p {
 
     h2 {
         font-size: 45px;
+    }
+
+    button:hover {
+        background-color: #2056ac;
     }
 
     #section1 p {
@@ -223,5 +251,4 @@ footer p {
         font-size: 4em;
         margin-bottom: 0.5em;
     }
-
 }
