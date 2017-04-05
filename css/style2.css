@@ -24,7 +24,7 @@ header {
     margin: 0;
     padding: 0.25em;
 }
-
+/*
 .navOpen {
     display: none;
     background-color: #092146;
@@ -33,7 +33,7 @@ header {
 
 .navOpen:target {
     display: block;
-}
+}*/
 
 header i.fa-cog {
     display: none;
@@ -64,10 +64,10 @@ h1 {
 
 #section3 {
     margin: auto;
-    width: 90%;
+    width: 90%;nav {
     margin: 0.5em auto;
 }
-
+}
 
 section {
     display: flex;
